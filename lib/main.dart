@@ -66,7 +66,7 @@ class _SIFORMState extends State<SIFORM> {
   }
 
   Widget getImage() {
-    AssetImage assetImage = AssetImage('images/bag.png');
+    AssetImage assetImage = AssetImage('images/bag.jpg');
     Image image = Image(image: assetImage, width: 100, height: 100);
     return Container(
       child: image,
@@ -109,6 +109,7 @@ class _SIFORMState extends State<SIFORM> {
                     keyboardType: TextInputType.number,
                     style: textStyle,
                     controller: principalController,
+                    // ignore: missing_return
                     validator: (String value) {
                       if (value.isEmpty) {
                         return "Please Enter the principal amount";
@@ -128,6 +129,7 @@ class _SIFORMState extends State<SIFORM> {
                     keyboardType: TextInputType.number,
                     style: textStyle,
                     controller: roiController,
+                    // ignore: missing_return
                     validator: (String value) {
                       if (value.isEmpty) {
                         return "Enter Interest Rate!";
@@ -152,6 +154,7 @@ class _SIFORMState extends State<SIFORM> {
                           keyboardType: TextInputType.number,
                           style: textStyle,
                           controller: termController,
+                          // ignore: missing_return
                           validator: (String value) {
                           if (value.isEmpty) {
                           return "Enter Years!";
