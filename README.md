@@ -1,4 +1,4 @@
-# hello
+# FLUTTER-SIMPLE-INTEREST-CALC-APP
 
 A new Flutter project.
 
